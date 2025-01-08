@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Drukwerkdeal Carreer Page</title>
 </head>
 
@@ -27,133 +28,194 @@
         <p>Haico Meijerink, Algemeen Directeur</p>
     </section>
 
-    <section class="informatie">
-        <p>Iedere business verdient het om gezien te worden. Daarom maken wij bedrukte producten toegankelijk voor ieder bedrijf dat klaar is om indruk te maken, op het grootste printplatform van Nederland en België. En dat kunnen we alleen met superhelden als jij, die graag willen werken voor het leukste bedrijf van de Benelux!</p>
+    <section class="information">
+        <p>Iedere business verdient het om gezien te worden. Daarom maken wij bedrukte producten toegankelijk voor ieder
+            bedrijf dat klaar is om indruk te maken, op het grootste printplatform van Nederland en België. En dat
+            kunnen we alleen met superhelden als jij, die graag willen werken voor het leukste bedrijf van de Benelux!
+        </p>
     </section>
 
-    <section class="vacatures">
+    <section class="jobs">
         <h2>Onze vacatures</h2>
-        <select class="filter-element">
-            <option value="">Afdeling</option>
-            <option value="Plaats">Plaats</option>
-            <option value="Vacature type">Vacature type</option>
-        </select>
+
+        <form method="GET" action="filter-vacatures">
+            <label for="afdeling">Afdeling:</label>
+            <select id="afdeling" name="afdeling">
+                <option value="">Alle</option>
+                <option value="Customer Care">Customer Care</option>
+                <option value="Development">Development</option>
+                <option value="Finance">Finance</option>
+                <option value="HR">HR</option>
+                <option value="IT">IT</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Productie">Productie</option>
+                <option value="Supply Chain Management">Supply Chain Management</option>
+                <option value="Algemeen">Algemeen</option>
+                <option value="Shop Management">Shop Management</option>
+                <option value="Product Management">Product Management</option>
+            </select>
+
+            <label for="plaats">Plaats:</label>
+            <select id="plaats" name="plaats">
+                <option value="">Alle</option>
+                <option value="Deventer">Deventer</option>
+                <option value="Antwerpen">Antwerpen</option>
+            </select>
+
+            <label for="vacature">Vacature type:</label>
+            <select id="vacature" name="vacature">
+                <option value="">Alle</option>
+                <option value="Fulltime">Fulltime</option>
+                <option value="Parttime">Parttime</option>
+                <option value="Fulltime / Parttime">Fulltime / Parttime</option>
+            </select>
+
+            <button type="submit">Filter</button>
+        </form>
+
+        <!-- <article class="filter">
+            <p><a href="section:afdeling">Afdeling</a>
+            </p>
+
+            <p><a href="section:plaats">Plaats</a>
+            </p>
+
+            <p><a href="section:vacature">Vacature type</a>
+            </p>
+        </article> -->
 
         <h3 class="vacatureblok">Customer Care</h3>
-        <article class="vacatureblokstyle">
+        <article class="vacatureblokstyle" data-afdeling="Customer Care" data-plaats="Deventer"
+            data-vacature="Fulltime / Parttime">
             <a href="https://careers.printdeal.com/customer-care-specialist-4/nl">Customer Care Specialist</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
         <h3 class="vacatureblok">Development</h3>
-        <article class="vacatureblokstyle">
+        <article class="vacatureblokstyle" data-afdeling="Development" data-plaats="Deventer"
+            data-vacature="Fulltime / Parttime">
             <a href="https://careers.printdeal.com/software-engineer-47/nl">Software Engineer</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
-        <article class="vacatureblokstyle">
-            <a href="https://careers.printdeal.com/stage-software-engineering-development-26/nl">Stage Software Engineering / Development</a>
+        <article class="vacatureblokstyle" data-afdeling="Development" data-plaats="Deventer"
+            data-vacature="Fulltime / Parttime">
+            <a href="https://careers.printdeal.com/stage-software-engineering-development-26/nl">Stage Software
+                Engineering / Development</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
-        
         <h3 class="vacatureblok">Finance</h3>
-        <article class="vacatureblokstyle">
+        <article class="vacatureblokstyle" data-afdeling="Finance" data-plaats="Deventer"
+            data-vacature="Fulltime / Parttime">
             <a href="https://careers.printdeal.com/stage-finance-1/nl">Stage Finance</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
-        <article class="vacatureblokstyle">
+        <article class="vacatureblokstyle" data-afdeling="Finance" data-plaats="Deventer"
+            data-vacature="Fulltime / Parttime">
             <a href="https://careers.printdeal.com/business-controller-1/nl">Business Controller</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
         <h3 class="vacatureblok">HR</h3>
-        <article class="vacatureblokstyle">
+        <article class="vacatureblokstyle" data-afdeling="HR" data-plaats="Deventer" data-vacature="Parttime">
             <a href="https://careers.printdeal.com/vacature-casemanager-verzuim-1/nl">Casemanager Verzuim</a>
             <p>Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
         <h3 class="vacatureblok">IT</h3>
-        <article class="vacatureblokstyle">
-            <a href="https://careers.printdeal.com/functioneel-applicatiebeheerder-2/nl">Functioneel Applicatiebeheer</a>
+        <article class="vacatureblokstyle" data-afdeling="IT" data-plaats="Deventer"
+            data-vacature="Fulltime / Parttime">
+            <a href="https://careers.printdeal.com/functioneel-applicatiebeheerder-2/nl">Functioneel
+                Applicatiebeheer</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
         <h3 class="vacatureblok">Marketing</h3>
-        <article class="vacatureblokstyle">
-            <a href="https://careers.printdeal.com/content-marketeer/nl">Cotent Marketeer</a>
+        <article class="vacatureblokstyle" data-afdeling="Marketing" data-plaats="Deventer"
+            data-vacature="Fulltime / Parttime">
+            <a href="https://careers.printdeal.com/content-marketeer/nl">Content Marketeer</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
         <h3 class="vacatureblok">Productie</h3>
-        <article class="vacatureblokstyle">
+        <article class="vacatureblokstyle" data-afdeling="Productie" data-plaats="Deventer"
+            data-vacature="Fulltime / Parttime">
             <a href="https://careers.printdeal.com/snijder-5/nl">Snijder</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal Productie, Deventer</p>
         </article>
 
-        <article class="vacatureblokstyle">
+        <article class="vacatureblokstyle" data-afdeling="Productie" data-plaats="Deventer" data-vacature="Fulltime">
             <a href="https://careers.printdeal.com/process-engineer-12/nl">Process Engineer</a>
             <p>Fulltime</p>
             <p>Drukwerkdeal Productie, Deventer</p>
         </article>
 
         <h3 class="vacatureblok">Supply Chain Management</h3>
-        <article class="vacatureblokstyle">
+        <article class="vacatureblokstyle" data-afdeling="Supply Chain Management" data-plaats="Deventer"
+            data-vacature="Fulltime / Parttime">
             <a href="https://careers.printdeal.com/medior-inkoper-3/nl">Medior Inkoper</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal Productie, Deventer</p>
         </article>
 
-        <article class="vacatureblokstyle">
+        <article class="vacatureblokstyle" data-afdeling="Supply Chain Management" data-plaats="Deventer"
+            data-vacature="Fulltime / Parttime">
             <a href="https://careers.printdeal.com/stage-duurzaamheidsafdeling/nl">Stage Duurzaamheidsafdeling</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
         <h3 class="vacatureblok">Algemeen</h3>
-        <article class="vacatureblokstyle">
+        <article class="vacatureblokstyle" data-afdeling="Algemeen" data-plaats="Deventer"
+            data-vacature="Fulltime / Parttime">
             <a href="https://careers.printdeal.com/open-sollicitatie/nl/apply?&step=1">Open Sollicitatie</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal Productie, Deventer</p>
         </article>
 
-        <article class="vacatureblokstyle">
+        <article class="vacatureblokstyle" data-afdeling="Algemeen" data-plaats="Deventer"
+            data-vacature="Fulltime / Parttime">
             <a href="https://careers.printdeal.com/business-developer-3/nl">Business Developer</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
         <h3 class="vacatureblok">Shop Management</h3>
-        <article class="vacatureblokstyle">
+        <article class="vacatureblokstyle" data-afdeling="Shop Management" data-plaats="Antwerpen"
+            data-vacature="Fulltime / Parttime">
             <a href="https://careers.printdeal.com/ux-designer/nl">UX Designer</a>
             <p>Fulltime / Parttime</p>
             <p>Printdeal.be, Antwerpen</p>
         </article>
 
-        <article class="vacatureblokstyle">
+        <article class="vacatureblokstyle" data-afdeling="Shop Management" data-plaats="Deventer"
+            data-vacature="Fulltime / Parttime">
             <a href="https://careers.printdeal.com/ux-designer-7/nl">UX Designer</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
         <h3 class="vacatureblok">Product Management</h3>
-        <article class="vacatureblokstyle">
+        <article class="vacatureblokstyle" data-afdeling="Product Management" data-plaats="Antwerpen"
+            data-vacature="Fulltime / Parttime">
             <a href="https://careers.printdeal.com/pricing-specialist-1/nl">Pricing Specialist</a>
             <p>Fulltime / Parttime</p>
             <p>Printdeal.be, Antwerpen</p>
         </article>
 
-        <article class="vacatureblokstyle">
+        <article class="vacatureblokstyle" data-afdeling="Product Management" data-plaats="Deventer"
+            data-vacature="Fulltime / Parttime">
             <a href="https://careers.printdeal.com/category-manager-services-1/nl">Category Manager Services</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
@@ -161,8 +223,12 @@
     </section>
 
     <section class="pitch">
-        <p>Precies weten wat je klanten willen, soms nog voordat ze het zelf weten. Dat is e-commerce. Om onze klanten optimaal te servicen maken we gebruik van een wereldwijd netwerk van leveranciers. Werken bij Drukwerkdeal en Printdeal.be is: bouwen aan klantenservice, technologie en marketing waar je ‘u’ tegen zegt (al houden we het liever op ‘je’).</p>
-        <p>Enthousiast over ons, maar is dit niet de vacature waar je naar op zoek bent? Schrijf je dan in voor onze <a href="https://careers.printdeal.com/">job alert!</a></p>
+        <p>Precies weten wat je klanten willen, soms nog voordat ze het zelf weten. Dat is e-commerce. Om onze klanten
+            optimaal te servicen maken we gebruik van een wereldwijd netwerk van leveranciers. Werken bij Drukwerkdeal
+            en Printdeal.be is: bouwen aan klantenservice, technologie en marketing waar je ‘u’ tegen zegt (al houden we
+            het liever op ‘je’).</p>
+        <p>Enthousiast over ons, maar is dit niet de vacature waar je naar op zoek bent? Schrijf je dan in voor onze <a
+                href="https://careers.printdeal.com/">job alert!</a></p>
     </section>
 
     <section class="imagecollage">
