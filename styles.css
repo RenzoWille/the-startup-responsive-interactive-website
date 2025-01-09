@@ -1,29 +1,130 @@
 body{
     margin: 0;
-}
+    background-color: rgba(232, 113, 44, 0.2);
+    font-family: "Noto Sans";
 
-/* filteren met anchors op bepaalde secties
+    h1, h2, h3, p, a{
+        padding-left: 10px;
+    }
 
-paar vacatures filteren op plaats (deventer), afdeling en vacature type (fulltime/parttime)
-*/
+    h1{
+        font-size: 48px;
+    }
 
+    h2{
+        font-size: 36px;
+    }
 
-video{
-    width: 100vw;
-    z-index: -1;
-}
-
-.filter{
-    display: flex;
-    position: sticky;
+    h3{
+        font-size: 24px;
+    }
 
     p{
-        margin: 10px;
+        font-size: 16px;
     }
 }
 
-.vacatureblokstyle{
-    border: 1px solid black;
-    padding: 5px;
-    padding-top: 1em;
+.video-container {
+    position: relative; /* Zorg ervoor dat de titel binnen deze container wordt gepositioneerd */
+    width: 100%;
+    height: 90vh; /* Zorg ervoor dat de container de volledige viewporthoogte inneemt */
 }
+
+video {
+    width: 100%;
+    height: 100%; /* Zorg ervoor dat de video de volledige container vult */
+    object-fit: cover; /* Zorg ervoor dat de video goed schaalt zonder vervorming */
+    z-index: -1; /* Zet de video achter de tekst */
+}
+
+.title {
+    position: absolute; /* Maak de titel absoluut gepositioneerd */
+    top: 50%; /* Zet de titel in het midden van de video */
+    left: 50%; /* Zet de titel in het midden van de video */
+    transform: translate(-50%, -50%); /* Centreer de titel precies */
+    color: white; /* Maak de tekst wit zodat het zichtbaar is bovenop de video */
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.jobs {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter {
+    position: sticky;
+    top: 0;
+    background: #e8712c;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+
+
+    @media (min-width: 1024px) {
+        display: flex; /* Gebruik flexbox layout */
+        gap: 10px; /* Ruimte tussen de dropdowns */
+        flex-wrap: wrap; /* Zorgt ervoor dat de filters op een nieuwe regel komen als er niet genoeg ruimte is */
+    }
+}
+
+details {
+    margin-bottom: 0; /* Verwijder extra marges tussen de filters */
+    flex: 1; /* Optioneel: laat de filters gelijke breedte innemen */
+    min-width: 150px; /* Zorgt ervoor dat ze niet te smal worden */
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav a {
+    display: block;
+    margin: 5px 0;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.filter nav {
+    margin-top: 5px;
+}
+
+.quote{
+    img{
+        width: 50%;
+    }
+
+    .alt{
+        font-size: 14px;
+    }
+}
+
+.vacatureblok{
+    display: block;
+    border: 5px solid white;
+    border-radius: 20px;
+    background-color: white;
+    padding-top: 5px;
+    margin: 15px 0;
+
+    a{
+        color: #e8712c;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+.imagecollage{
+    img{
+        width: 100%;
+    }
+}
+
+

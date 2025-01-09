@@ -4,28 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Drukwerkdeal Carreer Page</title>
 </head>
 
 <body>
 
-    <video playsinline autoplay muted loop poster="images/heroimage.png" id="bgvid">
-        <source src="videos/drukwerkdeal.mp4" type="video/mp4">
-    </video>
-
-    <header>
-        <article class="title">
-            <h1>Fluitend naar je werk</h1>
-        </article>
-    </header>
-
-    <section class="quote">
-        <p>"Drukwerkdeal laat zien wie je bent. Jij, met al je dromen en ideeën. Met al jouw creativiteit. Want ondanks
-            alle verschillen in deze wereld – in cultuur, in mensen, in verhalen – heeft iedereen uiteindelijk dezelfde
-            behoefte: echt laten zien wie hij of zij is. En dat is de kern, de ziel van ons bedrijf."</p>
-        <img src="images/haico.png" alt="Haico Meijerink">
-        <p>Haico Meijerink, Algemeen Directeur</p>
+    <section class="video-container">
+        <video playsinline autoplay muted loop poster="images/heroimage.png" id="bgvid">
+            <source src="videos/drukwerkdeal.mp4" type="video/mp4">
+        </video>
+        <header>
+            <article class="title">
+                <h1>Fluitend naar je werk</h1>
+            </article>
+        </header>
     </section>
 
     <section class="information">
@@ -35,191 +33,210 @@
         </p>
     </section>
 
+    <section class="quote">
+        <p>"Drukwerkdeal laat zien wie je bent. Jij, met al je dromen en ideeën. Met al jouw creativiteit. Want ondanks
+            alle verschillen in deze wereld – in cultuur, in mensen, in verhalen – heeft iedereen uiteindelijk dezelfde
+            behoefte: echt laten zien wie hij of zij is. En dat is de kern, de ziel van ons bedrijf."</p>
+        <img src="images/haico.png" alt="Haico Meijerink">
+        <p class="alt" >Haico Meijerink, Algemeen Directeur</p>
+    </section>
+
     <section class="jobs">
-        <h2>Onze vacatures</h2>
+        <h2 id="vacatures">Onze vacatures</h2>
 
-        <form method="GET" action="filter-vacatures">
-            <label for="afdeling">Afdeling:</label>
-            <select id="afdeling" name="afdeling">
-                <option value="">Alle</option>
-                <option value="Customer Care">Customer Care</option>
-                <option value="Development">Development</option>
-                <option value="Finance">Finance</option>
-                <option value="HR">HR</option>
-                <option value="IT">IT</option>
-                <option value="Marketing">Marketing</option>
-                <option value="Productie">Productie</option>
-                <option value="Supply Chain Management">Supply Chain Management</option>
-                <option value="Algemeen">Algemeen</option>
-                <option value="Shop Management">Shop Management</option>
-                <option value="Product Management">Product Management</option>
-            </select>
+        <aside class="filter">
+            <details>
+                <summary>Afdeling</summary>
+                <nav>
+                    <a href="#Customer Care">Customer Care</a>
+                    <a href="#Development">Development</a>
+                    <a href="#Finance">Finance</a>
+                    <a href="#HR">HR</a>
+                    <a href="#IT">IT</a>
+                    <a href="#Marketing">Marketing</a>
+                    <a href="#Productie">Productie</a>
+                    <a href="#Supply Chain Management">Supply Chain Management</a>
+                    <a href="#Algemeen">Algemeen</a>
+                    <a href="#Shop Management">Shop Management</a>
+                    <a href="#Product Management">Product Management</a>
+                </nav>
+            </details>
 
-            <label for="plaats">Plaats:</label>
-            <select id="plaats" name="plaats">
-                <option value="">Alle</option>
-                <option value="Deventer">Deventer</option>
-                <option value="Antwerpen">Antwerpen</option>
-            </select>
+            <details>
+                <summary>Plaats</summary>
+                <nav>
+                    <a href="#Deventer">Deventer</a>
+                    <a href="#Antwerpen">Antwerpen</a>
+                </nav>
+            </details>
 
-            <label for="vacature">Vacature type:</label>
-            <select id="vacature" name="vacature">
-                <option value="">Alle</option>
-                <option value="Fulltime">Fulltime</option>
-                <option value="Parttime">Parttime</option>
-                <option value="Fulltime / Parttime">Fulltime / Parttime</option>
-            </select>
+            <details>
+                <summary>Vacature type</summary>
+                <nav>
+                    <a href="#Fulltime">Fulltime</a>
+                    <a href="#Parttime">Parttime</a>
+                    <a href="#Fulltime / Parttime">Fulltime / Parttime</a>
+                </nav>
+            </details>
+        </aside>
 
-            <button type="submit">Filter</button>
-        </form>
-
-        <!-- <article class="filter">
-            <p><a href="section:afdeling">Afdeling</a>
-            </p>
-
-            <p><a href="section:plaats">Plaats</a>
-            </p>
-
-            <p><a href="section:vacature">Vacature type</a>
-            </p>
-        </article> -->
-
-        <h3 class="vacatureblok">Customer Care</h3>
-        <article class="vacatureblokstyle" data-afdeling="Customer Care" data-plaats="Deventer"
-            data-vacature="Fulltime / Parttime">
+        <div id="Deventer"></div>
+        <div id="Fulltime / Parttime"></div>
+        <h3 id="Customer Care">Customer Care</h3>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/customer-care-specialist-4/nl">Customer Care Specialist</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
-        <h3 class="vacatureblok">Development</h3>
-        <article class="vacatureblokstyle" data-afdeling="Development" data-plaats="Deventer"
-            data-vacature="Fulltime / Parttime">
+        <div id="Deventer"></div>
+        <div id="Fulltime / Parttime"></div>
+        <h3 id="Development">Development</h3>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/software-engineer-47/nl">Software Engineer</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
-        <article class="vacatureblokstyle" data-afdeling="Development" data-plaats="Deventer"
-            data-vacature="Fulltime / Parttime">
+        <div id="Deventer"></div>
+        <div id="Fulltime / Parttime"></div>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/stage-software-engineering-development-26/nl">Stage Software
                 Engineering / Development</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
-        <h3 class="vacatureblok">Finance</h3>
-        <article class="vacatureblokstyle" data-afdeling="Finance" data-plaats="Deventer"
-            data-vacature="Fulltime / Parttime">
+        <div id="Deventer"></div>
+        <div id="Fulltime / Parttime"></div>
+        <h3 id="Finance">Finance</h3>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/stage-finance-1/nl">Stage Finance</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
-        <article class="vacatureblokstyle" data-afdeling="Finance" data-plaats="Deventer"
-            data-vacature="Fulltime / Parttime">
+        <div id="Deventer"></div>
+        <div id="Fulltime / Parttime"></div>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/business-controller-1/nl">Business Controller</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
-        <h3 class="vacatureblok">HR</h3>
-        <article class="vacatureblokstyle" data-afdeling="HR" data-plaats="Deventer" data-vacature="Parttime">
+        <div id="Deventer"></div>
+        <div id="Parttime"></div>
+        <h3 id="HR">HR</h3>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/vacature-casemanager-verzuim-1/nl">Casemanager Verzuim</a>
             <p>Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
-        <h3 class="vacatureblok">IT</h3>
-        <article class="vacatureblokstyle" data-afdeling="IT" data-plaats="Deventer"
-            data-vacature="Fulltime / Parttime">
+        <div id="Deventer"></div>
+        <div id="Fulltime / Parttime"></div>
+        <h3 id="IT">IT</h3>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/functioneel-applicatiebeheerder-2/nl">Functioneel
                 Applicatiebeheer</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
-        <h3 class="vacatureblok">Marketing</h3>
-        <article class="vacatureblokstyle" data-afdeling="Marketing" data-plaats="Deventer"
-            data-vacature="Fulltime / Parttime">
+        <div id="Deventer"></div>
+        <div id="Fulltime / Parttime"></div>
+        <h3 id="Marketing">Marketing</h3>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/content-marketeer/nl">Content Marketeer</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
-        <h3 class="vacatureblok">Productie</h3>
-        <article class="vacatureblokstyle" data-afdeling="Productie" data-plaats="Deventer"
-            data-vacature="Fulltime / Parttime">
+        <div id="Deventer"></div>
+        <div id="Fulltime / Parttime"></div>
+        <h3 id="Productie">Productie</h3>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/snijder-5/nl">Snijder</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal Productie, Deventer</p>
         </article>
 
-        <article class="vacatureblokstyle" data-afdeling="Productie" data-plaats="Deventer" data-vacature="Fulltime">
+        <div id="Deventer"></div>
+        <div id="Fulltime"></div>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/process-engineer-12/nl">Process Engineer</a>
             <p>Fulltime</p>
             <p>Drukwerkdeal Productie, Deventer</p>
         </article>
 
-        <h3 class="vacatureblok">Supply Chain Management</h3>
-        <article class="vacatureblokstyle" data-afdeling="Supply Chain Management" data-plaats="Deventer"
-            data-vacature="Fulltime / Parttime">
+        <div id="Deventer"></div>
+        <div id="Fulltime / Parttime"></div>
+        <h3 id="Supply Chain Management">Supply Chain Management</h3>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/medior-inkoper-3/nl">Medior Inkoper</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal Productie, Deventer</p>
         </article>
 
-        <article class="vacatureblokstyle" data-afdeling="Supply Chain Management" data-plaats="Deventer"
-            data-vacature="Fulltime / Parttime">
+        <div id="Deventer"></div>
+        <div id="Fulltime / Parttime"></div>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/stage-duurzaamheidsafdeling/nl">Stage Duurzaamheidsafdeling</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
-        <h3 class="vacatureblok">Algemeen</h3>
-        <article class="vacatureblokstyle" data-afdeling="Algemeen" data-plaats="Deventer"
-            data-vacature="Fulltime / Parttime">
+        <div id="Deventer"></div>
+        <div id="Fulltime / Parttime"></div>
+        <h3 id="Algemeen">Algemeen</h3>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/open-sollicitatie/nl/apply?&step=1">Open Sollicitatie</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal Productie, Deventer</p>
         </article>
 
-        <article class="vacatureblokstyle" data-afdeling="Algemeen" data-plaats="Deventer"
-            data-vacature="Fulltime / Parttime">
+        <div id="Deventer"></div>
+        <div id="Fulltime / Parttime"></div>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/business-developer-3/nl">Business Developer</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
-        <h3 class="vacatureblok">Shop Management</h3>
-        <article class="vacatureblokstyle" data-afdeling="Shop Management" data-plaats="Antwerpen"
-            data-vacature="Fulltime / Parttime">
+        <div id="Antwerpen"></div>
+        <div id="Fulltime / Parttime"></div>
+        <h3 id="Shop Management">Shop Management</h3>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/ux-designer/nl">UX Designer</a>
             <p>Fulltime / Parttime</p>
             <p>Printdeal.be, Antwerpen</p>
         </article>
 
-        <article class="vacatureblokstyle" data-afdeling="Shop Management" data-plaats="Deventer"
-            data-vacature="Fulltime / Parttime">
+        <div id="Deventer"></div>
+        <div id="Fulltime / Parttime"></div>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/ux-designer-7/nl">UX Designer</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
 
-        <h3 class="vacatureblok">Product Management</h3>
-        <article class="vacatureblokstyle" data-afdeling="Product Management" data-plaats="Antwerpen"
-            data-vacature="Fulltime / Parttime">
+        <div id="Antwerpen"></div>
+        <div id="Fulltime / Parttime"></div>
+        <h3 id="Product Management">Product Management</h3>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/pricing-specialist-1/nl">Pricing Specialist</a>
             <p>Fulltime / Parttime</p>
             <p>Printdeal.be, Antwerpen</p>
         </article>
 
-        <article class="vacatureblokstyle" data-afdeling="Product Management" data-plaats="Deventer"
-            data-vacature="Fulltime / Parttime">
+        <div id="Deventer"></div>
+        <div id="Fulltime / Parttime"></div>
+        <article class="vacatureblok">
             <a href="https://careers.printdeal.com/category-manager-services-1/nl">Category Manager Services</a>
             <p>Fulltime / Parttime</p>
             <p>Drukwerkdeal, Deventer</p>
         </article>
+
     </section>
 
     <section class="pitch">
