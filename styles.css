@@ -45,7 +45,6 @@ body{
     h3{
         font-size: 24px;
         margin-bottom: -0.3em;
-    
     }
 
     p{
@@ -54,32 +53,116 @@ body{
 }
 
 .video-container {
-    position: relative; /* Zorg ervoor dat de titel binnen deze container wordt gepositioneerd */
+    display: grid;
     width: 100%;
-    height: 90vh; /* Zorg ervoor dat de container de volledige viewporthoogte inneemt */
+    height: 90vh;
+    padding-bottom: 1em;
+
+    h1, video {
+        grid-area: 1 / 1;
+    }
+
+    video{
+        width: 100%;
+        height: 100%; /* Zorg ervoor dat de video de volledige container vult */
+        object-fit: cover; /* Zorg ervoor dat de video goed schaalt zonder vervorming */
+        z-index: -1;
+    }
+
+    h1{
+        color: white; 
+        text-align: center;
+        font-size: 48px;
+        font-weight: bold;
+        padding-top: 50%;
+    }
 }
 
-video {
-    width: 100%;
-    height: 100%; /* Zorg ervoor dat de video de volledige container vult */
-    object-fit: cover; /* Zorg ervoor dat de video goed schaalt zonder vervorming */
-    z-index: -1;
-}
+form {
+    display: grid;
+    place-items: center;
+    padding-bottom: .5em;
+  }
+  
+  svg{
+    color:#e8712c;
+  }
+  
+  label, div {
+    grid-area: 1 / 1
+  }
+  
+  label {
+    z-index: 1;
+    transition: .3s ease-out;
+  }
+  
+  button, label {
+    display: inline grid;
+    place-items: center;
+    border: 2px solid #E8712C;
+    border-radius: 100%;
+    height: 3em;
+    width: 3em;
+    background-color: transparent;
+    
+    svg{
+      height:2em;
+      width: 2em;
+    }
+  }
+  
+  input{
+    border: 2px solid #E8712C;
+    border-radius: 20px;
+    width: 20em;
+    background-color: transparent;
+  }
+  
+  div {
+    display: flex;
+    transform: scale(0);
+    transition: .5s ease-out;
+  }
+  
+  form.active div {
+    transform: scale(1);
+  }
+  
+  form.active label {
+    translate: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .search-bar{
+    display: none;
+  }
 
-.title {
-    position: absolute; /* Maak de titel absoluut gepositioneerd */
-    top: 50%; /* Zet de titel in het midden van de video */
-    left: 50%; /* Zet de titel in het midden van de video */
-    transform: translate(-50%, -50%); /* Centreer de titel precies */
-    color: white; 
-    text-align: center;
-    font-size: 48px;
-    font-weight: bold;
-}
-
-.jobs {
+/* .search-bar{
     display: flex;
     flex-direction: column;
+}
+
+#search-input{
+    width: 90vw; 
+    height: 1.5em;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #e8712c;
+    border-radius: 20px;
+    background-color: transparent;
+    margin-bottom: 10px;
+}  */
+
+
+.jobs {
+    display: flex;  
+    flex-direction: column;
+}
+
+.hide {
+    display: none;
 }
 
 .filter {
@@ -123,16 +206,6 @@ nav a:hover {
     margin-top: 5px;
 }
 
-.quote{
-    img{
-        width: 50%;
-    }
-
-    .alt{
-        font-size: 14px;
-    }
-}
-
 .vacatureblok{
     display: block;
     border: 5px solid white;
@@ -148,10 +221,93 @@ nav a:hover {
     }
 }
 
-.imagecollage{
-    img{
+.container{
         width: 100%;
+        height: 100%;
+    }
+
+
+.imagecollage{
+    padding-top: 20px;
+
+    img{
+        width: 60%;
+        box-sizing: border-box;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+        animation: float 6s ease-in-out infinite;
+        img { width: 100%; height: auto; }
+    }
+
+    img:first-child{
+        float: left;
+        margin-right: 10px;
+    }
+
+    img:nth-child(2){
+        float: right;
+        margin-left: 10px;
+    }
+
+    img:nth-child(3){
+        float: left;
+        margin-right: 10px;
+    }
+
+    img:nth-child(4){
+        float: right;
+        margin-left: 10px;
+    }
+
+    img:nth-child(5){
+        float: left;
+        margin-right: 10px;
+    }
+
+    img:nth-child(6){
+        float: right;
+        margin-left: 10px;
+    }
+
+    img:nth-child(7){
+        float: left;
+        margin-right: 10px;
+    }
+
+    img:last-child{
+        visibility: hidden;
     }
 }
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-10px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.quote{
+    img{
+        width: 50%;
+        border-radius: 100%;
+        padding-left: 25%;
+    }
+
+    .alt{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
 
 
