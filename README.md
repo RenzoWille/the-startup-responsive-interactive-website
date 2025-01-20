@@ -13,6 +13,15 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 
+## Volgorde en nesten van CSS selectors
+
+
+
+## Nesten van media queries
+
+
+## Naamgeving
+
 ## Bronnen
 
 ## Licentie

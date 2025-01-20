@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,301 +23,308 @@
         <h1>Fluitend naar je werk</h1>
     </article>
 
-    <form>
-        <label for="search">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-                <title>Zoek</title>
-                <path
-                    d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
-                </path>
-            </svg>
-        </label>
+    <div class="wrapper">
+        <div class="search-container">
+            <form>
+                <label for="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                        viewBox="0 0 50 50">
+                        <title>Zoek</title>
+                        <path
+                            d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
+                        </path>
+                    </svg>
+                </label>
 
-        <div>
-            <input type="search" id="search" autocomplete="off">
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-                    <path
-                        d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
-                    </path>
-                </svg>
-            </button>
+                <div>
+                    <input type="search" id="search" autocomplete="off">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                            viewBox="0 0 50 50">
+                            <path
+                                d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
-    </form>
 
 
-    <div class="search-bar">
-        <input type="search" id="search-input" placeholder="Zoek een vacature...">
+        <div class="search-bar">
+            <input type="search" id="search-input" placeholder="Zoek een vacature...">
+        </div>
+
+        <div class="filter-container">
+            <article class="filter-vacature">
+                <aside class="filter">
+                    <details>
+                        <summary>Afdeling</summary>
+                        <nav>
+                            <a href="#Customer-Care">Customer Care</a>
+                            <a href="#Development">Development</a>
+                            <a href="#Finance">Finance</a>
+                            <a href="#HR">HR</a>
+                            <a href="#IT">IT</a>
+                            <a href="#Marketing">Marketing</a>
+                            <a href="#Productie">Productie</a>
+                            <a href="#Supply-Chain-Management">Supply Chain Management</a>
+                            <a href="#Algemeen">Algemeen</a>
+                            <a href="#Shop-Management">Shop Management</a>
+                            <a href="#Product-Management">Product Management</a>
+                        </nav>
+                    </details>
+
+                    <details>
+                        <summary>Plaats</summary>
+                        <nav>
+                            <a href="#Deventer">Deventer</a>
+                            <a href="#Antwerpen">Antwerpen</a>
+                        </nav>
+                    </details>
+
+                    <details>
+                        <summary>Vacature type</summary>
+                        <nav>
+                            <a href="#Fulltime">Fulltime</a>
+                            <a href="#Parttime">Parttime</a>
+                            <a href="#Fulltime-Parttime">Fulltime / Parttime</a>
+                        </nav>
+                    </details>
+                </aside>
+        </div>
     </div>
 
 
-    <article class="filter-vacature">
-        <aside class="filter">
-            <details>
-                <summary>Afdeling</summary>
-                <nav>
-                    <a href="#Customer-Care">Customer Care</a>
-                    <a href="#Development">Development</a>
-                    <a href="#Finance">Finance</a>
-                    <a href="#HR">HR</a>
-                    <a href="#IT">IT</a>
-                    <a href="#Marketing">Marketing</a>
-                    <a href="#Productie">Productie</a>
-                    <a href="#Supply-Chain-Management">Supply Chain Management</a>
-                    <a href="#Algemeen">Algemeen</a>
-                    <a href="#Shop-Management">Shop Management</a>
-                    <a href="#Product-Management">Product Management</a>
-                </nav>
-            </details>
+    <section class="jobs" id="vacatures">
+        <h2>Onze vacatures</h2>
 
-            <details>
-                <summary>Plaats</summary>
-                <nav>
-                    <a href="#Deventer">Deventer</a>
-                    <a href="#Antwerpen">Antwerpen</a>
-                </nav>
-            </details>
+        <section id="Customer-Care">
 
-            <details>
-                <summary>Vacature type</summary>
-                <nav>
-                    <a href="#Fulltime">Fulltime</a>
-                    <a href="#Parttime">Parttime</a>
-                    <a href="#Fulltime-Parttime">Fulltime / Parttime</a>
-                </nav>
-            </details>
-        </aside>
+            <h3>Customer Care</h3>
 
-
-        <section class="jobs" id="vacatures">
-            <h2>Onze vacatures</h2>
-
-            <section id="Customer-Care">
-
-                <h3>Customer Care</h3>
-
-                <article class="vacatureblok">
-                    <div id="Deventer"></div>
-                    <div id="Fulltime-Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/customer-care-specialist-4/nl">Customer Care
-                            Specialist</a>
-                    </h4>
-                    <p>Fulltime / Parttime</p>
-                    <p>Drukwerkdeal, Deventer</p>
-                </article>
-
-            </section>
-
-
-            <section id="Development">
-
-                <h3>Development</h3>
-
-                <article class="vacatureblok">
-                    <div id="Deventer"></div>
-                    <div id="Fulltime-Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/software-engineer-47/nl">Software Engineer</a></h4>
-                    <p>Fulltime / Parttime</p>
-                    <p>Drukwerkdeal, Deventer</p>
-                </article>
-
-                <article class="vacatureblok">
-                    <div id="Deventer"></div>
-                    <div id="Fulltime-Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/stage-software-engineering-development-26/nl">Stage
-                            Software
-                            Engineering / Development</a></h4>
-                    <p>Fulltime / Parttime</p>
-                    <p>Drukwerkdeal, Deventer</p>
-                </article>
-
-            </section>
-
-            <section id="Finance">
-
-                <h3>Finance</h3>
-
-                <article class="vacatureblok">
-                    <div id="Deventer"></div>
-                    <div id="Fulltime-Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/stage-finance-1/nl">Stage Finance</a></h4>
-                    <p>Fulltime / Parttime</p>
-                    <p>Drukwerkdeal, Deventer</p>
-                </article>
-
-                <article class="vacatureblok">
-                    <div id="Deventer"></div>
-                    <div id="Fulltime-Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/business-controller-1/nl">Business Controller</a></h4>
-                    <p>Fulltime / Parttime</p>
-                    <p>Drukwerkdeal, Deventer</p>
-                </article>
-
-            </section>
-
-            <section id="HR">
-
-                <h3>HR</h3>
-
-                <article class="vacatureblok">
-                    <div id="Deventer"></div>
-                    <div id="Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/vacature-casemanager-verzuim-1/nl">Casemanager
-                            Verzuim</a>
-                    </h4>
-                    <p>Parttime</p>
-                    <p>Drukwerkdeal, Deventer</p>
-                </article>
-
-            </section>
-
-            <section id="IT">
-
-                <h3>IT</h3>
-
-                <article class="vacatureblok">
-                    <div id="Deventer"></div>
-                    <div id="Fulltime-Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/functioneel-applicatiebeheerder-2/nl">Functioneel
-                            Applicatiebeheer</a></h4>
-                    <p>Fulltime / Parttime</p>
-                    <p>Drukwerkdeal, Deventer</p>
-                </article>
-
-            </section>
-
-
-            <section id="Marketing">
-
-                <h3>Marketing</h3>
-
-                <article class="vacatureblok">
-                    <div id="Deventer"></div>
-                    <div id="Fulltime-Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/content-marketeer/nl">Content Marketeer</a></h4>
-                    <p>Fulltime / Parttime</p>
-                    <p>Drukwerkdeal, Deventer</p>
-                </article>
-
-            </section>
-
-
-            <section id="Productie">
-
-                <h3>Productie</h3>
-
-                <article class="vacatureblok">
-                    <div id="Deventer"></div>
-                    <div id="Fulltime-Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/snijder-5/nl">Snijder</a></h4>
-                    <p>Fulltime / Parttime</p>
-                    <p>Drukwerkdeal Productie, Deventer</p>
-                </article>
-
-                <article class="vacatureblok">
-                    <div id="Deventer"></div>
-                    <div id="Fulltime"></div>
-                    <h4><a href="https://careers.printdeal.com/process-engineer-12/nl">Process Engineer</a></h4>
-                    <p>Fulltime</p>
-                    <p>Drukwerkdeal Productie, Deventer</p>
-                </article>
-
-            </section>
-
-            <section id="Supply-Chain-Management">
-
-                <h3>Supply Chain Management</h3>
-                
-                <article class="vacatureblok">
+            <article class="vacatureblok">
                 <div id="Deventer"></div>
                 <div id="Fulltime-Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/medior-inkoper-3/nl">Medior Inkoper</a></h4>
-                    <p>Fulltime / Parttime</p>
-                    <p>Drukwerkdeal Productie, Deventer</p>
-                </article>
+                <h4><a href="https://careers.printdeal.com/customer-care-specialist-4/nl">Customer Care
+                        Specialist</a>
+                </h4>
+                <p>Fulltime / Parttime</p>
+                <p>Drukwerkdeal, Deventer</p>
+            </article>
 
-                <article class="vacatureblok">
-                    <div id="Deventer"></div>
-                    <div id="Fulltime-Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/stage-duurzaamheidsafdeling/nl">Stage
-                            Duurzaamheidsafdeling</a>
-                    </h4>
-                    <p>Fulltime / Parttime</p>
-                    <p>Drukwerkdeal, Deventer</p>
-                </article>
-
-            </section>
+        </section>
 
 
-            <section id="Algemeen">
+        <section id="Development">
 
-                <h3>Algemeen</h3>
+            <h3>Development</h3>
 
-                <article class="vacatureblok">
-                    <div id="Deventer"></div>
-                    <div id="Fulltime-Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/open-sollicitatie/nl/apply?&step=1">Open Sollicitatie</a>
-                    </h4>
-                    <p>Fulltime / Parttime</p>
-                    <p>Drukwerkdeal Productie, Deventer</p>
-                </article>
+            <article class="vacatureblok">
+                <div id="Deventer"></div>
+                <div id="Fulltime-Parttime"></div>
+                <h4><a href="https://careers.printdeal.com/software-engineer-47/nl">Software Engineer</a></h4>
+                <p>Fulltime / Parttime</p>
+                <p>Drukwerkdeal, Deventer</p>
+            </article>
 
-                <article class="vacatureblok">
-                    <div id="Deventer"></div>
-                    <div id="Fulltime-Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/business-developer-3/nl">Business Developer</a></h4>
-                    <p>Fulltime / Parttime</p>
-                    <p>Drukwerkdeal, Deventer</p>
-                </article>
+            <article class="vacatureblok">
+                <div id="Deventer"></div>
+                <div id="Fulltime-Parttime"></div>
+                <h4><a href="https://careers.printdeal.com/stage-software-engineering-development-26/nl">Stage
+                        Software
+                        Engineering / Development</a></h4>
+                <p>Fulltime / Parttime</p>
+                <p>Drukwerkdeal, Deventer</p>
+            </article>
 
-            </section>
+        </section>
 
-            <section id="Shop-Management">
+        <section id="Finance">
 
-                <h3>Shop Management</h3>
+            <h3>Finance</h3>
 
-                <article class="vacatureblok">
-                    <div id="Antwerpen"></div>
-                    <div id="Fulltime-Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/ux-designer/nl">UX Designer</a></h4>
-                    <p>Fulltime / Parttime</p>
-                    <p>Printdeal.be, Antwerpen</p>
-                </article>
+            <article class="vacatureblok">
+                <div id="Deventer"></div>
+                <div id="Fulltime-Parttime"></div>
+                <h4><a href="https://careers.printdeal.com/stage-finance-1/nl">Stage Finance</a></h4>
+                <p>Fulltime / Parttime</p>
+                <p>Drukwerkdeal, Deventer</p>
+            </article>
 
-                <article class="vacatureblok">
-                    <div id="Deventer"></div>
-                    <div id="Fulltime-Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/ux-designer-7/nl">UX Designer</a></h4>
-                    <p>Fulltime / Parttime</p>
-                    <p>Drukwerkdeal, Deventer</p>
-                </article>
+            <article class="vacatureblok">
+                <div id="Deventer"></div>
+                <div id="Fulltime-Parttime"></div>
+                <h4><a href="https://careers.printdeal.com/business-controller-1/nl">Business Controller</a></h4>
+                <p>Fulltime / Parttime</p>
+                <p>Drukwerkdeal, Deventer</p>
+            </article>
 
-            </section>
+        </section>
 
-            <section id="Product-Management">
+        <section id="HR">
 
-                <h3>Product Management</h3>
+            <h3>HR</h3>
 
-                <article class="vacatureblok">
-                    <div id="Antwerpen"></div>
-                    <div id="Fulltime-Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/pricing-specialist-1/nl">Pricing Specialist</a></h4>
-                    <p>Fulltime / Parttime</p>
-                    <p>Printdeal.be, Antwerpen</p>
-                </article>
+            <article class="vacatureblok">
+                <div id="Deventer"></div>
+                <div id="Parttime"></div>
+                <h4><a href="https://careers.printdeal.com/vacature-casemanager-verzuim-1/nl">Casemanager
+                        Verzuim</a>
+                </h4>
+                <p>Parttime</p>
+                <p>Drukwerkdeal, Deventer</p>
+            </article>
 
-                <article class="vacatureblok">
-                    <div id="Deventer"></div>
-                    <div id="Fulltime-Parttime"></div>
-                    <h4><a href="https://careers.printdeal.com/category-manager-services-1/nl">Category Manager
-                            Services</a>
-                    </h4>
-                    <p>Fulltime / Parttime</p>
-                    <p>Drukwerkdeal, Deventer</p>
-                </article>
+        </section>
 
-            </section>
-    </article>
+        <section id="IT">
+
+            <h3>IT</h3>
+
+            <article class="vacatureblok">
+                <div id="Deventer"></div>
+                <div id="Fulltime-Parttime"></div>
+                <h4><a href="https://careers.printdeal.com/functioneel-applicatiebeheerder-2/nl">Functioneel
+                        Applicatiebeheer</a></h4>
+                <p>Fulltime / Parttime</p>
+                <p>Drukwerkdeal, Deventer</p>
+            </article>
+
+        </section>
+
+
+        <section id="Marketing">
+
+            <h3>Marketing</h3>
+
+            <article class="vacatureblok">
+                <div id="Deventer"></div>
+                <div id="Fulltime-Parttime"></div>
+                <h4><a href="https://careers.printdeal.com/content-marketeer/nl">Content Marketeer</a></h4>
+                <p>Fulltime / Parttime</p>
+                <p>Drukwerkdeal, Deventer</p>
+            </article>
+
+        </section>
+
+
+        <section id="Productie">
+
+            <h3>Productie</h3>
+
+            <article class="vacatureblok">
+                <div id="Deventer"></div>
+                <div id="Fulltime-Parttime"></div>
+                <h4><a href="https://careers.printdeal.com/snijder-5/nl">Snijder</a></h4>
+                <p>Fulltime / Parttime</p>
+                <p>Drukwerkdeal Productie, Deventer</p>
+            </article>
+
+            <article class="vacatureblok">
+                <div id="Deventer"></div>
+                <div id="Fulltime"></div>
+                <h4><a href="https://careers.printdeal.com/process-engineer-12/nl">Process Engineer</a></h4>
+                <p>Fulltime</p>
+                <p>Drukwerkdeal Productie, Deventer</p>
+            </article>
+
+        </section>
+
+        <section id="Supply-Chain-Management">
+
+            <h3>Supply Chain Management</h3>
+
+            <article class="vacatureblok">
+                <div id="Deventer"></div>
+                <div id="Fulltime-Parttime"></div>
+                <h4><a href="https://careers.printdeal.com/medior-inkoper-3/nl">Medior Inkoper</a></h4>
+                <p>Fulltime / Parttime</p>
+                <p>Drukwerkdeal Productie, Deventer</p>
+            </article>
+
+            <article class="vacatureblok">
+                <div id="Deventer"></div>
+                <div id="Fulltime-Parttime"></div>
+                <h4><a href="https://careers.printdeal.com/stage-duurzaamheidsafdeling/nl">Stage
+                        Duurzaamheidsafdeling</a>
+                </h4>
+                <p>Fulltime / Parttime</p>
+                <p>Drukwerkdeal, Deventer</p>
+            </article>
+
+        </section>
+
+
+        <section id="Algemeen">
+
+            <h3>Algemeen</h3>
+
+            <article class="vacatureblok">
+                <div id="Deventer"></div>
+                <div id="Fulltime-Parttime"></div>
+                <h4><a href="https://careers.printdeal.com/open-sollicitatie/nl/apply?&step=1">Open Sollicitatie</a>
+                </h4>
+                <p>Fulltime / Parttime</p>
+                <p>Drukwerkdeal Productie, Deventer</p>
+            </article>
+
+            <article class="vacatureblok">
+                <div id="Deventer"></div>
+                <div id="Fulltime-Parttime"></div>
+                <h4><a href="https://careers.printdeal.com/business-developer-3/nl">Business Developer</a></h4>
+                <p>Fulltime / Parttime</p>
+                <p>Drukwerkdeal, Deventer</p>
+            </article>
+
+        </section>
+
+        <section id="Shop-Management">
+
+            <h3>Shop Management</h3>
+
+            <article class="vacatureblok">
+                <div id="Antwerpen"></div>
+                <div id="Fulltime-Parttime"></div>
+                <h4><a href="https://careers.printdeal.com/ux-designer/nl">UX Designer</a></h4>
+                <p>Fulltime / Parttime</p>
+                <p>Printdeal.be, Antwerpen</p>
+            </article>
+
+            <article class="vacatureblok">
+                <div id="Deventer"></div>
+                <div id="Fulltime-Parttime"></div>
+                <h4><a href="https://careers.printdeal.com/ux-designer-7/nl">UX Designer</a></h4>
+                <p>Fulltime / Parttime</p>
+                <p>Drukwerkdeal, Deventer</p>
+            </article>
+
+        </section>
+
+        <section id="Product-Management">
+
+            <h3>Product Management</h3>
+
+            <article class="vacatureblok">
+                <div id="Antwerpen"></div>
+                <div id="Fulltime-Parttime"></div>
+                <h4><a href="https://careers.printdeal.com/pricing-specialist-1/nl">Pricing Specialist</a></h4>
+                <p>Fulltime / Parttime</p>
+                <p>Printdeal.be, Antwerpen</p>
+            </article>
+
+            <article class="vacatureblok">
+                <div id="Deventer"></div>
+                <div id="Fulltime-Parttime"></div>
+                <h4><a href="https://careers.printdeal.com/category-manager-services-1/nl">Category Manager
+                        Services</a>
+                </h4>
+                <p>Fulltime / Parttime</p>
+                <p>Drukwerkdeal, Deventer</p>
+            </article>
+
+        </section>
+        </article>
     </section>
 
     <article class="quote">
@@ -352,7 +360,8 @@
         houden we
         het liever op ‘je’).</p>
     <p>Enthousiast over ons, maar is dit niet de vacature waar je naar op zoek bent? Schrijf je dan in voor onze
-        <a href="https://careers.printdeal.com/">job alert!</a></p>
+        <a href="https://careers.printdeal.com/">job alert!</a>
+    </p>
 
     <footer class="footer">
         <img src="logo" alt="logo">
