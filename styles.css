@@ -79,6 +79,12 @@ body{
         font-size: 48px;
         font-weight: bold;
         padding-top: 50%;
+
+        @media (min-width: 1024px) {
+            /* display: flex; 
+            gap: 10px;
+            flex-wrap: wrap;     */
+        }
     }
 }
 
@@ -111,20 +117,19 @@ form {
         width: 3em;
         background-color: transparent;
     }
-  }
 
-  
-  input{
-    border: 2px solid #E8712C;
-    border-radius: 20px;
-    width: 20em;
-    background-color: transparent;
-  }
-  
-  div {
-    display: flex;
-    transform: scale(0);
-    transition: .5s ease-out;
+    input{
+        border: 2px solid #E8712C;
+        border-radius: 20px;
+        width: 20em;
+        background-color: transparent;
+      }
+      
+      div {
+        display: flex;
+        transform: scale(0);
+        transition: .5s ease-out;
+      }
   }
   
   form.active div {
@@ -175,6 +180,21 @@ form {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 
+    nav {
+        margin-top: 5px;
+    }
+
+    a {
+        display: block;
+        margin: 5px 0;
+        color: #000000;
+        text-decoration: none;
+    
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     @media (min-width: 1024px) {
         display: flex; 
         gap: 10px; /* Ruimte tussen de dropdowns */
@@ -186,26 +206,11 @@ details {
     margin-bottom: 0; /* Verwijder extra marges tussen de filters */
     flex: 1; /* Laat de filters gelijke breedte innemen */
     min-width: 150px; /* Zorgt ervoor dat ze niet te smal worden */
-}
 
-summary {
-    font-weight: bold;
-    cursor: pointer;
-}
-
-nav a {
-    display: block;
-    margin: 5px 0;
-    color: #000000;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.filter nav {
-    margin-top: 5px;
+    summary {
+        font-weight: bold;
+        cursor: pointer;
+    }
 }
 
 .vacatureblok{
