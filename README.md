@@ -31,7 +31,7 @@ Het probleem was dat de huidige vacature pagina erg verouderd was en niet meer v
 <img width="677" alt="Scherm­afbeelding 2025-01-22 om 18 57 16" src="https://github.com/user-attachments/assets/65f379a0-8de1-41d2-8243-d6c65d5a9eb6" />
 
 #### Link naar Github Page
-](https://renzowille.github.io/the-startup-responsive-interactive-website/)
+(https://renzowille.github.io/the-startup-responsive-interactive-website/)
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 
