@@ -99,7 +99,7 @@ body{
 .wrapper {
     display: grid;
 
-    /* @media (min-width: 1024px) {
+    @media (min-width: 1024px) {
         .search-container{
             grid-template-columns: 1/2;
         }
@@ -107,7 +107,7 @@ body{
         .filter-container{
             grid-template-columns: 2/2;
         }
-    } */
+    }
 
 }
 
