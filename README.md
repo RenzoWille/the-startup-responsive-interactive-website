@@ -32,6 +32,24 @@ Het probleem was dat de huidige vacature pagina erg verouderd was en niet meer v
 
 #### Link naar Github Page
 (https://renzowille.github.io/the-startup-responsive-interactive-website/)
+
+### Responsive
+Tijdens het bouwen van de pagina is het mobile-first principe aangehouden. Mobile First is een design strategie. Als je ontwerpt voor een klein scherm, dan moet je goed nadenken over welke content belangrijk is en in beeld moet komen te staan. 
+
+Hiervoor is er gebruik gemaakt van breakpoints, zodat het design op de juiste momenten 'breekt' en gebruiksvriendelijk blijft. 
+
+https://github.com/RenzoWille/the-startup-responsive-interactive-website/blob/3ed1458506b4157f34037dfc846c127f79ef1d8e/styles.css#L73-L81
+Hier is er voor gezorgd dat de video een bepaalde aspect-ratio behoudt wanneer de viewport groter wordt dan mobiele schermen.
+
+https://github.com/RenzoWille/the-startup-responsive-interactive-website/blob/3ed1458506b4157f34037dfc846c127f79ef1d8e/styles.css#L242-L259
+Hier is er voor gezorgd dat de vacatureblokken breken bij meer dan 850px om zo het scherm alsnog te vullen en de positionering van de blokken te veranderen.
+
+https://github.com/RenzoWille/the-startup-responsive-interactive-website/blob/3ed1458506b4157f34037dfc846c127f79ef1d8e/styles.css#L283-L289
+Hier wordt er voor gezorgd dat de vacatureblokken groter worden naarmate de grootte van de viewport veranderd.
+
+https://github.com/RenzoWille/the-startup-responsive-interactive-website/blob/3ed1458506b4157f34037dfc846c127f79ef1d8e/styles.css#L335-L355
+Hier wordt er voor gezorgd dat de afbeeldingen zichtbaar worden op schermen met een grote viewport en niet zichtbaar zijn op kleinere viewports.
+
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 
