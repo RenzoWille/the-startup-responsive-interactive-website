@@ -99,10 +99,15 @@ Ook in mijn JavaScript heb ik ervoor gezorgd dat ik duidelijke, simpele namen he
 
 ## Bronnen
 https://github.com/fdnd-task/the-startup-responsive-interactive-website/blob/main/docs/mobile-first.md
+
 https://github.com/fdnd-task/the-startup-responsive-interactive-website/blob/main/docs/refactoring-code-conventions.md
+
 https://github.com/fdnd-task/the-client-website/blob/main/docs/code-conventies.md#geef-je-html-ademruimte
+
 https://github.com/fdnd-task/the-client-website/blob/main/docs/code-conventies.md#schrijf-je-css-selectors-in-dezelfde-volgorde-als-de-html
+
 https://github.com/fdnd-task/the-client-website/blob/main/docs/code-conventies.md#nest-je-media-queries
+
 https://github.com/fdnd-task/the-startup-responsive-interactive-website/blob/main/docs/interaction-design.md
 
 
