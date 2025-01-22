@@ -1,4 +1,30 @@
-/* Generieke stijlen, waarschijnlijk hoeven jullie deze niet aan te passen */
+/* Noto Sans */
+@font-face {
+    font-family: 'Noto Sans Regular';
+    font-weight: var(--font-weight-regular);
+    src: url("../assets/fonts/notosans/notosans-400.woff2") format("woff2");
+}
+
+
+@font-face {
+    font-family: 'Noto Sans Semibold';
+    font-weight: var(--font-family-semibold);
+    src: url("../assets/fonts/notosans/notosans-600.woff2") format("woff2");
+}
+
+
+@font-face {
+    font-family: 'Noto Sans Bold';
+    font-weight: var(--font-weight-bold);
+    src: url("../assets/fonts/notosans/notosans-700.woff2") format("woff2");
+}
+
+/* Anek */
+@font-face {
+    font-family: 'Anek';
+    src: url("../assets/fonts/anek/anek-650.woff2") format("woff2");
+}
+
 
 @layer styleguide {
 
@@ -11,162 +37,17 @@
         max-width: 40em;
         margin: auto;
         background: #fff;
-    }
 
-    nav:not([class]),
-    h1:not([class]),
-    h2:not([class]),
-    p:not([class]),
-    figcaption:not([class]) {
-        font-family: sans-serif;
-        line-height: 1.5;
-    }
+        /* kleuren */
 
-    p:not([class])>code:not([class]) {
-        display: block;
-    }
+        --colors-primary: #e8712c;
+        --text-primary: black;
+        --text-secondary: white;
 
-    nav:not([class])>a {
-        padding: .5em;
-        border: 1px solid;
-        color: inherit;
-        text-decoration: none;
+        /* font */
 
-        &:hover,
-        &:focus {
-            text-decoration: underline;
-        }
-    }
+        --main-font: "Anek";
+        --secondary-font: "Noto Sans"
 
-    figure:not([class]) {
-        display: grid;
-        grid-template-columns: 6rem 1fr;
-        align-items: center;
-        gap: 1rem;
-        margin: 1rem 0;
-
-        >code {
-            display: grid;
-            place-items: center;
-            border-radius: 50%;
-            aspect-ratio: 1;
-            background: #ccc;
-        }
-    }
-}
-
-#kleur {
-    .code.colors.primary {
-        background-color: #e8712c;
-        color: white;
-    }
-
-    .colors.secondary {
-        background-color: #e8712c;
-        color: white;
-    }
-
-    .colors.tertiary {
-        background-color: #FFFFFF;
-        border: 1px solid black;
-    }
-
-    .colors.info {
-        background-color: #364BF7;
-        color: white;
-    }
-
-    .colors.success {
-        background-color: #e8712c;
-        color: white;
-    }
-
-    .colors.warning {
-        background-color: #666666;
-        color: white;
-    }
-
-    .colors.error {
-        background-color: #FFFFFF;
-        border: 1px solid black;
-    }
-
-    .colors.dim {
-        background-color: #364BF7;
-        color: white;
-    }
-
-    .colors.black {
-        background-color: #FFFFFF;
-        border: 1px solid black;
-    }
-
-    .colors.white {
-        background-color: #364BF7;
-        color: white;
-    }
-}
-
-#typografie{
-    .h1{
-      font-size: 96px;
-      font-family: "Noto Sans";
-      line-height: 96px;
-      letter-spacing: -4%;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-  
-    .h2{
-      font-size: 64px;
-      font-family: "Archivo";
-      line-height: 64px;
-      letter-spacing: -4%;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-  
-    .h3{
-      font-size: 48px;
-      font-family: "Archivo";
-      line-height: 48px;
-      letter-spacing: -4%;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-  
-    .h4{
-      font-size: 32px;
-      font-family: "Archivo";
-      line-height: 40px;
-      letter-spacing: 0%;
-      font-weight: 400;
-      text-transform: uppercase;
-    }
-  
-    .h5{
-      font-size: 24px;
-      font-family: "Archivo";
-      line-height: 40px;
-      letter-spacing: 0%;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-  
-    .h6{
-      font-size: 24px;
-      font-family: "Archivo";
-      line-height: 40px;
-      letter-spacing: 0%;
-      font-weight: 400;
-      text-transform: uppercase;
-    }
-  
-    .paragraph{
-      font-size: 18px;
-      font-family: "Archivo";
-      font-weight: 400;
-      line-height: 24px;
-      letter-spacing: -4%;
     }
 }
