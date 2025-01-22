@@ -189,6 +189,7 @@ form {
     position: sticky;
     top: 0;
     background: #e8712c;
+    padding: 20px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -245,12 +246,10 @@ details {
 #vacatures {
     display: grid;
     grid-template-columns: 1fr; /* Standaard één kolom */
-    gap: 1.5rem; /* Ruimte tussen de items */
     justify-content: center; 
     align-items: center; 
     min-height: 100vh; /* Volledige hoogte van de viewport */
-    margin: 0 auto; /* Zorg dat het gecentreerd blijft */
-    padding: 1rem;
+    margin: 0 auto; 
 }
 
 
