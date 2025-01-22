@@ -189,9 +189,13 @@ form {
     position: sticky;
     top: 0;
     background: #e8712c;
-    padding: 10px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 1rem;
+    margin: 15px;
+    max-width: 30em;
+    min-width: 50%;
 
     @media (min-width: 1024px) {
         width: 75%;
@@ -238,13 +242,28 @@ details {
     flex-direction: column;
 }
 
-.vacatureblok{
-    display: block;
+#vacatures {
+    display: grid;
+    grid-template-columns: 1fr; /* Standaard één kolom */
+    gap: 1.5rem; /* Ruimte tussen de items */
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; /* Volledige hoogte van de viewport */
+    margin: 0 auto; /* Zorg dat het gecentreerd blijft */
+    padding: 1rem;
+}
+
+
+.vacatureblok {
     border: 5px solid #e8712c;
-    border-radius: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
     background-color: #e8712c;
-    padding-top: 5px;
-    margin: 15px 0;
+    padding: 1rem;
+    margin: 15px;
+    max-width: 30em;
+    min-width: 50%;
 
     a{
         color: white;
