@@ -319,7 +319,7 @@ details {
 }
 
 /* === IMAGES + TEXT=== */
-.container {
+.collage-container {
     padding: 1em;
     background-color: #e8712c;
     color: white;
@@ -366,19 +366,57 @@ details {
 
 /* === TEXT ===*/
 
-.scouting-text{
+.scouting-container{
     padding: 1em;
 
-    @media (min-width: 1024px){
+    @media (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         padding: 5em;
-        text-align: center;
+        }
+
+    .scouting-text{
+        padding: 1em;
+    
+        @media (min-width: 1024px){
+            place-content: center;
+            padding: 5em;
+        }
+    
+        a{
+            padding-left: 0px;
+            color: #e8712c;
+        }
     }
 
-    a{
-        padding-left: 0px;
-        color: #e8712c;
+    .image-collage-2 {
+        padding-top: 20px;
+
+        @media (min-width: 1024px){
+            place-content: center;
+        }
+
+        img {
+            gap: 1em;
+            padding: 1em;
+            width: 300px;
+            box-sizing: border-box;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+
+            @media (max-width: 1023px){
+                display: none;
+            }
+
+            @media (min-width: 1024px){
+                max-width: 300px;
+                place-content: center;
+            }
+        }
     }
 }
+
 
 /* === FOOTER === */
 
