@@ -92,7 +92,6 @@ body {
         font-weight: bold;
 
         @media (min-width: 1024px) {
-            width: 100%;
             padding-top: 0px;
         }
     }
